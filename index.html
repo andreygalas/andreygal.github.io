@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>AndreyGalas</title>
+        <link rel="shortcut icon" href="images/coding.jpg" herf="images/coding.jpg">
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()"ondblclick="openForm() class="Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/laptop_vd.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Andrey's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>“Your talent determines what you can do. Your motivation determines how much you’re willing to do. Your attitude determines how well you do it.” — Lou Holtz.</q>
+                    <br> “Make each day your masterpiece.” — John Wooden 
+                    <br>
+                    <br> My name is Andrey. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->   
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/andrey.jpg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>  
+                    <!-- Slide 2 of 6 -->   
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/jshtml.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/c_.net.jpg" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/contact.png" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span>    
+                 </div>
+            </div>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/contact-us-concept.jpg" alt="Programming language code">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>I am a dedicated father of three boys who values spending quality time with my family. Also, I am a Full-Time truck driver at KEHE and Part-Time student at the Tech Academy.
+                    <br>
+                    <br>I am expected to graduate September 2023 from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> I am currently enrolled in C# AND .NET BOOT CAMP.
+                    <br>
+                    <br>I am pursuing a career in Software Engineering and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><href="https://github.com/andreygalas" target="_blank">Andrey's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/andreygalas" target="_blank"><img src="images/github-logo1.png" alt="images/github-logo2.png"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/coding.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST">
+                    <p class="center">
+                        <a href="mailto:andreyg25@gmail.com">Get in touch via email</a> 
+                        <nav style="text-align: center;">
+                            <ul>
+                              <a href="GalasAndreyResume.docx" target="_blank">Resume</a><br>
+                              <br>
+                              <a href="https://www.linkedin.com/in/agalaS" target="_blank">LinkedIn</a>
+                            </ul>
+                          </nav>
+
+                 
+                </form>
+            </div>
+        </div>
+
+  <!--Footer section-->
+            <footer>
+               
+                    <p class="center">&copy 2023, <a href="https://andreygalas.github.io/" target="_blank">Andrey Galas</a></p><br>
+
+            </footer>
+        <script src="sample_portfolio.js"></script>
+    </body>
+</html>
